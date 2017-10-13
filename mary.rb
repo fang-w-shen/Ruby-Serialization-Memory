@@ -7,7 +7,7 @@ class Mary
 	end
 
 	def add_msg(msg)
-		@msg[:Mary] << msg
+		@msg[:messages][:Mary] << msg
 		f4 = File.open("data.yaml",'w+')
 		f4.puts YAML::dump(@msg)
 		f4.close
